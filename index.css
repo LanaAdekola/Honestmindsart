@@ -1,0 +1,44 @@
+body{
+    margin: 0px;
+    color: black;
+    
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    background: ;
+}
+.nav-list{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    font-size: 1rem;
+
+
+}
+.honestmindsart{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    width: 50%;
+    padding: 40px 20px;
+    text-align: center;
+    
+}
+.hero-nav{
+    font-size: 30px;
+    list-style: none;
+}
+
+@media (min-width:576px){
+
+    .image-main,
+    .honestmindsart
+    {
+        width: 50%;
+}
+    .hero{
+        display: flex;
+        width: 100%;
+}
+}
