@@ -13,8 +13,9 @@ header{
     gap: 3rem;
     list-style: none;
     font-size: 1rem;
-
-
+}
+.main-btn{
+    padding: 10px 15px;
 }
 .honestmindsart{
     display: flex;
@@ -23,7 +24,7 @@ header{
     width: 50%;
     padding: 40px 20px;
     text-align: center;
-    
+
 }
 .hero-nav{
     font-size: 30px;
@@ -39,6 +40,6 @@ header{
 }
     .hero{
         display: flex;
-        width: 100%;
+       
 }
 }
