@@ -1,45 +1,152 @@
 body{
     margin: 0px;
     color: black;
-    
+    font-family: 'Libre Baskerville', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Smythe', cursive;
 }
 header{
     display: flex;
     justify-content: space-around;
     background: ;
 }
+.p-text{
+  font-size: 25px;
+}
+.main-text{
+  font-size: 35px;
+}
+.logo{
+  width: 5rem;
+}
 .nav-list{
     display: flex;
     gap: 3rem;
     list-style: none;
     font-size: 1rem;
+    cursor: pointer;
 }
 .main-btn{
-    padding: 10px 15px;
+    padding: 15px 7vw;
+    width: fit-content;
+    background: darkgreen;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    margin: 0 auto;
 }
+.main-btn:hover{
+  font-size: 20px;
+}
+.image-main{
+    width: 100%
+}
+
 .honestmindsart{
-    display: flex;
+    min-height: 250px;
     flex-direction: column;
     background-color: bisque;
-    width: 50%;
-    padding: 40px 20px;
+    padding: 70px 20px;
     text-align: center;
 
 }
-.hero-nav{
-    font-size: 30px;
+.hero-nav li{
+    font-size: 20px;
     list-style: none;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.hero-nav li:hover{
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.hero-nav2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px
+}
+.hero-nav2 p, h1{
+  margin-bottom: 50px;
 }
 
-@media (min-width:576px){
+
+.new-arrivals-display{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 30px;
+}
+
+.just-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.just-in-1{
+    width: 40vw;
+    height: 60vh;
+    border: 10px solid blanchedalmond;
+    padding: 5px;
+}
+
+.reviews, .contact{
+    text-align: center;
+    padding: 25px 5px
+}
+.contact{
+  background: burlywood;
+}
+.commitment{
+  text-align: center;
+}
+.privacy{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+.privacy-c{
+  background:   dimgrey ;
+  color: whitesmoke
+}
+@media (min-width: 576px){
 
     .image-main,
     .honestmindsart
     {
-        width: 50%;
+       width: 50%;
 }
     .hero{
         display: flex;
+        height: 100vh
        
 }
+  .new-arrivals-display{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      column-gap: 50px;
+}
+  .just-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    height: 100vh
+}
+  .just-in-1{
+    width: 15vw;
+    height: 60vh;
+    border: 10px solid blanchedalmond;
+    padding: 5px;
+}
+.bi{
+  width: 20px;
+  color: black;
 }
