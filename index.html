@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Send us a Message</title>
+        <title>Honestmindsart</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="css/style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Lobster&family=Roboto:ital,wght@0,100;0,400;0,500;1,400&family=Smythe&display=swap" rel="stylesheet">
-    </head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Lobster&family=Roboto:ital,wght@0,100;0,400;0,500;1,400&family=Smythe&display=swap" rel="stylesheet">
+ </head>
+
     <body>
         <header>
             <img class="logo" src="images/logo.png">
-            <nav>
+            <nav class="nav-wrapper">
                 <ul class="nav-list">
                     <li>Shop</li>
                     <li>Genres</li>
@@ -21,7 +23,12 @@
                     <li>About</li>
                 </ul>
             </nav>
+            <i class="fa-solid fa-bars"></i>
         </header>
+         <div class="cartContainer">
+            <i class="cart-number fa-solid fa-cart-shopping"></i>
+            <div id="cart-amount" class="cart-amount">0</div>
+        </div>
         <div class="hero">
             <div class="honestmindsart" >
                 <h1>Honestmindsart</h1>
@@ -33,6 +40,7 @@
                     <li>Inspired Art</li>
                 </ul>
                 <button class="main-btn">NEW ARRIVALS</button>
+                <i class="bi bi-cart4"></i>
             </div>
             <img class="image-main" src="images/basic.jpg">
         </div>
@@ -91,9 +99,9 @@
         </div>
         <div class="hero">
             <div class="honestmindsart">
-                <div class="hero-nav">
+                <div class="hero-nav2">
                     <h1>COOL CONTEMPORARY ART FOR KIDS</h1>
-                    <P>Explore our large selection of exciting art that grows with you</P>
+                    <p class="p-text">Explore our large selection of exciting art that grows with you</p>
                     <button class="main-btn">SHOP LITTLE COLLECTOR</button>
                 </div>
             </div>
@@ -132,18 +140,20 @@
         <div class="contact">
             <img class="contact-image">
             <div>
-                <h1>ART THAT MAKES YOUR SPACE POP</h1>
-                <p>LET'S TALK ART
+                <h1>LET'S TALK ART</h1>
+                <p class="p-text">
                     We'd love to hear from you!
-                    To say hello, ask a question or share an idea, give us a call, shoot us an email or fill out the form below.
-                    
-                    We're open Monday through Friday from 9am-5pm EST.
-                    
-                    Are you an artist? Please send submissions to hello@artstar.com (and please include a link to your website!)</p>
+                    <br>To say hello, ask a question or share an idea, give us a call, shoot us an email or fill out the form below.
+                     <br>
+                    <br>We're open Monday through Friday from 9am-5pm EST.
+                     <br>
+                    <br>Are you an artist? Please send submissions to hello@artstar.com (and please include a link to your website!)</p>
+                     <br>
                     <button class="main-btn">SHOP NEW WORK</button>
             </div>
         </div>
-        <div>
+        <div class="contact-us">
+            <h1>CONTACT US</h1>
             <form>
                 <label>Full Name</label>
                 <input type="text" class="fullname" name="">
@@ -152,10 +162,31 @@
                 <label>Phone Number</label>
                 <input type="number" class="phonenumber" name="phonenumber" required>
                 <label>Message</label>
-                <input type="text" class="message" name="message">
+                <textarea type="text" rows="4" class="message" name="message"></textarea>
                 <input type="submit" class="submit" name="submit">
             </form>
         </div>
         
+        
+         <ul class="nav-sidebar">
+                    <li>Shop</li>
+                    <li>Genres</li>
+                    <li>Artists</li>
+                    <li>Curators</li>
+                    <li>About</li>
+                </ul>
+                
+                
+            <div class="container" id="container">
+             
+            </div>
+            
+            <div>
+                <div>
+                    <i class="bi bi-cart2"></i>
+                    
+                </div>
+            </div>
     </body>
+    <script src="index.js" type="module">
 </html>
