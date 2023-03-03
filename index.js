@@ -48,37 +48,7 @@ function increment(productId){
   render()
 }
 
-function getPrice(){
-    let cartAmount = document.getElementById('cart-amount')
-    let price = 0
-    let priceHtml = ``
-    
-    newArrival.forEach(function(item){
-        price += item.quantity
-    })
-    
-    priceHtml += `
-       <div class="cartContainer">
-            <i class="cart-number fa-solid fa-cart-shopping"></i>
-            <div id="cart-amount" class="cart-amount">${price}</div>
-        </div>
-    `
-    cartAmount.innerHTML = priceHtml
 
-}
-function sendEmail(){
-            Email.send({
-            Host : "smtp.elasticemail.com",
-            Username : "username",
-            Password : "password",
-            To : 'them@website.com',
-            From : "you@isp.com",
-            Subject : "This is the subject",
-            Body : "And this is the body"
-        }).then(
-        message => alert(message)
-        );
-}
 function decrement(productId){
     const productTargetObject = newArrival.filter(function(product){
         return product.id === productId
