@@ -1,6 +1,7 @@
 import {newArrival} from `./data.js`
 
-const container = document.getElementById("container")
+const container = document.getElementById("container-wrapper")
+let basket = []
 function generateContainer() {
     let containerHtml = ``
     
@@ -46,7 +47,6 @@ function increment(productId){
   productTargetObj.quantity++
   render()
 }
-
 
 function decrement(productId){
     const productTargetObject = newArrival.filter(function(product){
