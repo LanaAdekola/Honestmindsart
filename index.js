@@ -1,7 +1,6 @@
 import {newArrival} from `./data.js`
 
 const container = document.getElementById("container")
-let basket = []
 function generateContainer() {
     let containerHtml = ``
     
@@ -48,19 +47,7 @@ function increment(productId){
   render()
 }
 
-function sendEmail(){
-            Email.send({
-            Host : "smtp.gmail.com",
-            Username : "adekolaibukunoluwa@gmail.com",
-            Password : "08102690557",
-            To : 'adekolaadelana@gmail.com',
-            From : document.getElementById("email").value,
-            Subject : "This is the subject",
-            Body : "And this is the body"
-        }).then(
-        message => alert(message)
-        );
-}
+
 function decrement(productId){
     const productTargetObject = newArrival.filter(function(product){
         return product.id === productId

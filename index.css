@@ -5,10 +5,8 @@
   
 }
 body{
-font-family: 'Libre Baskerville', serif;
-font-family: 'Lobster', cursive;
-font-family: 'Roboto', sans-serif;
-font-family: 'Smythe', cursive;
+  font-family: 'Karla', sans-serif;
+
 
 }
 header{
@@ -57,7 +55,10 @@ border-radius: 5px;
 
 }
 .container{
-grid
+  display: grid;
+  grid-template-columns: repeat(1, 12.7em);
+  gap:30px;
+  justify-content: center;
 }
 .cartContainer{
   position: fixed;
@@ -174,12 +175,7 @@ color: whitesmoke;
 width: 12.5em;
 border-radius: 4px;
 }
-.container{
-display: grid;
-grid-template-columns: repeat(1, 12.7em);
-gap:30px;
-justify-content: center;
-}
+
 .item{
 border: 2px black solid; 
 border-radius: 4px;
